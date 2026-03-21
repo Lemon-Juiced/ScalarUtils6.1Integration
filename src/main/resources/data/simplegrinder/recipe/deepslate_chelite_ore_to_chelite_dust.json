@@ -1,0 +1,10 @@
+{
+  "type": "simplegrinder:grinder",
+  "cookingtime": 150,
+  "experience": 0.1,
+  "ingredient": "scalarutils:deepslate_chelite_ore",
+  "result": {
+    "count": 4,
+    "id": "scalarutils:chelite_dust"
+  }
+}

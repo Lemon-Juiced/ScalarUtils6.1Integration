@@ -1,0 +1,17 @@
+{
+  "type": "energizedpower:alloy_furnace",
+  "ingredients": [
+    {
+      "ingredient": "#c:ingots/testudine"
+    },
+    {
+      "ingredient": "scalarutils:umbral_shard",
+      "count": 8
+    }
+  ],
+  "result": {
+    "id": "scalarutils:umbralite_ingot",
+    "count": 1
+  },
+  "ticks": 500
+}

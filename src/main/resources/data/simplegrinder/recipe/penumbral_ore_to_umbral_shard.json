@@ -1,0 +1,10 @@
+{
+  "type": "simplegrinder:grinder",
+  "cookingtime": 150,
+  "experience": 0.1,
+  "ingredient": "scalarutils:penumbral_ore",
+  "result": {
+    "count": 5,
+    "id": "scalarutils:umbral_shard"
+  }
+}

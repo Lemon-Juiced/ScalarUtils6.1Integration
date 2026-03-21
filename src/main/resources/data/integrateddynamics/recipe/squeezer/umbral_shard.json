@@ -1,0 +1,17 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "input_item": "#c:ores/penumbral",
+  "output_items": [
+    {
+      "item": {
+        "id": "scalarutils:umbral_shard"
+      }
+    },
+    {
+      "item": {
+        "id": "scalarutils:umbral_shard"
+      },
+      "chance": 0.75
+    }
+  ]
+}

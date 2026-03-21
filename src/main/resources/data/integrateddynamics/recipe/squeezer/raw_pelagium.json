@@ -1,0 +1,26 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "input_item": "#c:ores/pelagium",
+  "output_items": [
+    {
+      "tag": {
+        "tag": "c:raw_materials/pelagium",
+        "count": 4
+      }
+    },
+    {
+      "tag": {
+        "tag": "c:raw_materials/pelagium",
+        "count": 2
+      },
+      "chance": 0.5
+    },
+    {
+      "tag": {
+        "tag": "c:raw_materials/pelagium",
+        "count": 2
+      },
+      "chance": 0.5
+    }
+  ]
+}

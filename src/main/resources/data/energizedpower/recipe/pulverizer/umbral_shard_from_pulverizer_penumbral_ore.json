@@ -1,0 +1,21 @@
+{
+  "type": "energizedpower:pulverizer",
+  "ingredient": "#c:ores/penumbral",
+  "result": {
+    "percentages": [
+      1.0,
+      0.67,
+      0.17
+    ],
+    "percentagesAdvanced": [
+      1.0,
+      0.67,
+      0.33,
+      0.17
+    ],
+    "result": {
+      "id": "scalarutils:umbral_shard",
+      "count": 1
+    }
+  }
+}
