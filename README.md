@@ -1,5 +1,5 @@
 # Scalar Utils 6.1 Integration
-***The Revival of Scalar Utils for Minecraft 1.21.11***'s Integration Module
+***The Revival of Scalar Utils for Minecraft 26.1+***'s Integration Module
 
 ## Compatability
 ### Energized Power
