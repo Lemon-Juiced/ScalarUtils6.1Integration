@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.140'
+    id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
 }
 
@@ -23,20 +23,14 @@ base {
     archivesName = mod_id
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 neoForge {
     version = project.neo_version
 
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
-    }
-
     runs {
         client {
             client()
-
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -53,13 +47,11 @@ neoForge {
 
         data {
             clientData()
-
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
         }
 
         configureEach {
             systemProperty 'forge.logging.markers', 'REGISTRIES'
-
             logLevel = org.slf4j.event.Level.DEBUG
         }
     }
@@ -79,19 +71,19 @@ configurations {
 
 dependencies {
     // Scalar Core & Utils 6.1 Dependency
-    implementation "curse.maven:scalar-core-1112771:7772620" // Scalar Core
-    implementation "curse.maven:scalar-utils-6-1490516:7783574" // Scalar Utils 6.1
+    implementation "curse.maven:scalar-core-1112771:7809174" // Scalar Core
+    implementation "curse.maven:scalar-utils-6-1490516:7813498" // Scalar Utils 6.1
 
     // QoL For Testing
-    implementation "curse.maven:jade-324717:7742809" // Jade
-    implementation "curse.maven:jei-238222:7428957" // JEI
+    //implementation "curse.maven:jade-324717:7742809" // Jade
+    //implementation "curse.maven:jei-238222:7428957" // JEI
 
     // Dependencies
-    implementation "curse.maven:common-capabilities-247007:7628925" // Common Capabilities
-    implementation "curse.maven:cyclops-core-232758:7720732" // Cyclops Core
-    implementation "curse.maven:energized-power-782147:7649970" // Energized Power
-    implementation "curse.maven:integrated-dynamics-236307:7720509" // Integrated Dynamics
-    implementation "curse.maven:simple-grinder-238899:7362611" // Simple Grinder
+    //implementation "curse.maven:common-capabilities-247007:7628925" // Common Capabilities
+    //implementation "curse.maven:cyclops-core-232758:7720732" // Cyclops Core
+    //implementation "curse.maven:energized-power-782147:7649970" // Energized Power
+    //implementation "curse.maven:integrated-dynamics-236307:7720509" // Integrated Dynamics
+    //implementation "curse.maven:simple-grinder-238899:7362611" // Simple Grinder
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
