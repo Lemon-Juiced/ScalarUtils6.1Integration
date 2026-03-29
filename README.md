@@ -8,6 +8,9 @@
 ### Integrated Dynamics
 - Squeezer: Added recipes for Scalar Utils materials.
 - Mechanical Squeezer: Added recipes for Scalar Utils materials.
+### Scalar Power
+- Alloy Furnace: Added recipes for Testudine Ingots.
+- Grinder: Added recipes for Scalar Utils materials.
 ### Simple Grinder
 - Added recipes for Scalar Utils materials.
 
