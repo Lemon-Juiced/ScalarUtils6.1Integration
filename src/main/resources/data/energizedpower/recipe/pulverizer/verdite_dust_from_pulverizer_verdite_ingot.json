@@ -1,6 +1,6 @@
 {
   "type": "energizedpower:pulverizer",
-  "ingredient": "#c:ingots/chelite",
+  "ingredient": "#c:ingots/verdite",
   "result": {
     "percentages": [
       1.0
@@ -10,7 +10,7 @@
     ],
     "result": {
       "count": 1,
-      "id": "scalarutils:chelite_dust"
+      "id": "scalarutils:verdite_dust"
     }
   }
 }

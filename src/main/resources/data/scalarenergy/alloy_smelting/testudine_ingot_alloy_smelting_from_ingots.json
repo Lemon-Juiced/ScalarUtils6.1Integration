@@ -1,0 +1,10 @@
+{
+  "type": "scalarpower:alloy_smelting",
+  "ingredient1": "scalarutils:pelagium_ingot",
+  "ingredient1": "scalarutils:verdite_ingot",
+  "result": {
+    "id": "scalarutils:testudine_ingot",
+    "count": 2
+  }
+}
+

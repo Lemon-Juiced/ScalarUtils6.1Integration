@@ -2,7 +2,7 @@
   "type": "energizedpower:alloy_furnace",
   "ingredients": [
     {
-      "ingredient": "#c:ingots/chelite"
+      "ingredient": "#c:ingots/verdite"
     },
     {
       "ingredient": "#c:ingots/pelagium"
