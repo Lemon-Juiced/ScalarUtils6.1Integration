@@ -86,6 +86,8 @@ dependencies {
     //implementation "curse.maven:simple-grinder-238899:7362611" // Simple Grinder
 }
 
+def generatedModMetadataDir = layout.buildDirectory.dir("generated/modMetadata")
+
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
             minecraft_version      : minecraft_version,
@@ -99,10 +101,22 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
     inputs.properties replaceProperties
     expand replaceProperties
     from "src/main/templates"
-    into "build/generated/sources/modMetadata"
+    into generatedModMetadataDir
+
+    // Normally, this isn't needed, but for some reason it fails otherwise.
+    // Fail fast if metadata generation regresses; packaging this empty causes "Missing license" at load time.
+    doLast {
+        def modsToml = generatedModMetadataDir.get().file("META-INF/neoforge.mods.toml").asFile
+        if (!modsToml.exists() || modsToml.length() == 0L) {
+            throw new GradleException("Generated META-INF/neoforge.mods.toml is missing or empty")
+        }
+    }
 }
 
-sourceSets.main.resources.srcDir generateModMetadata
+sourceSets.main.resources.srcDir generatedModMetadataDir
+tasks.named('processResources', ProcessResources).configure {
+    dependsOn(generateModMetadata)
+}
 neoForge.ideSyncTask generateModMetadata
 
 publishing {
