@@ -71,12 +71,12 @@ configurations {
 
 dependencies {
     // Scalar Core & Utils 6.1 Dependency
-    implementation "curse.maven:scalar-core-1112771:7864198" // Scalar Core
-    implementation "curse.maven:scalar-utils-6-1490516:7864289" // Scalar Utils 6.1
+    implementation "curse.maven:scalar-core-1112771:7906370" // Scalar Core
+    implementation "curse.maven:scalar-utils-6-1490516:7906931" // Scalar Utils 6.1
 
     // QoL For Testing
-    implementation "curse.maven:jade-324717:7817285" // Jade
-    implementation "curse.maven:jei-238222:7861613" // JEI
+    implementation "curse.maven:jade-324717:7903350" // Jade
+    implementation "curse.maven:jei-238222:7904641" // JEI
 
     // Dependencies
     //implementation "curse.maven:common-capabilities-247007:7628925" // Common Capabilities
