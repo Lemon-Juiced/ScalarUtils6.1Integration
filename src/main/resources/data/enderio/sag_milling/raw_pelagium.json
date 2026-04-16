@@ -1,0 +1,25 @@
+{
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": "#c:raw_materials/pelagium",
+  "outputs": [
+    {
+      "item": {
+        "id": "scalarutils:pelagium_dust"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "id": "scalarutils:pelagium_dust"
+      }
+    },
+    {
+      "chance": 0.33,
+      "item": {
+        "count": 1,
+        "tag": "c:dusts/verdite"
+      }
+    }
+  ]
+}

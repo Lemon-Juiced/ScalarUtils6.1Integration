@@ -1,0 +1,24 @@
+{
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": "#c:ores/pelagium",
+  "outputs": [
+    {
+      "item": {
+        "id": "scalarutils:raw_pelagium"
+      }
+    },
+    {
+      "chance": 0.33,
+      "item": {
+        "id": "scalarutils:raw_pelagium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "id": "minecraft:cobblestone"
+      }
+    }
+  ]
+}

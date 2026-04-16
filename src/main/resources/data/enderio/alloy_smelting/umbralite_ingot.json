@@ -1,0 +1,18 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 4800,
+  "experience": 0.3,
+  "inputs": [
+    {
+      "count": 1,
+      "ingredient": "#c:ingots/testudine"
+    },
+    {
+      "count": 8,
+      "ingredient": "scalarutils:umbral_shard",
+    }
+  ],
+  "output": {
+    "id": "scalarutils:umbralite_ingot"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 4800,
+  "experience": 0.3,
+  "inputs": [
+    {
+      "count": 1,
+      "ingredient": "#c:ingots/pelagium"
+    },
+    {
+      "count": 1,
+      "ingredient": "#c:ingots/verdite"
+    }
+  ],
+  "output": {
+    "id": "scalarutils:testudine_ingot",
+    "count": 2
+  }
+}

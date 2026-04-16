@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#c:chunks/pelagium",
+    "#c:chunks/verdite"
+  ]
+}

@@ -72,18 +72,25 @@ configurations {
 dependencies {
     // Scalar Core & Utils 6.1 Dependency
     implementation "curse.maven:scalar-core-1112771:7906370" // Scalar Core
-    implementation "curse.maven:scalar-utils-6-1490516:7906931" // Scalar Utils 6.1
+    implementation "curse.maven:scalar-utils-6-1490516:7911192" // Scalar Utils 6.1
+    implementation "curse.maven:scalar-power-1503227:7933271" // Scalar Power
 
     // QoL For Testing
     implementation "curse.maven:jade-324717:7903350" // Jade
-    implementation "curse.maven:jei-238222:7904641" // JEI
+    implementation "curse.maven:jei-238222:7920926" // JEI
 
     // Dependencies
     //implementation "curse.maven:common-capabilities-247007:7628925" // Common Capabilities
+    //implementation "curse.maven:curios-309927:7925547" // Curios
     //implementation "curse.maven:cyclops-core-232758:7720732" // Cyclops Core
-    //implementation "curse.maven:energized-power-782147:7649970" // Energized Power
+    implementation "curse.maven:ender-io-64578:7932315" // Ender IO
+    implementation "curse.maven:energized-power-782147:7927590" // Energized Power
+    implementation "curse.maven:geckolib-388172:7913641" // Geckolib
     //implementation "curse.maven:integrated-dynamics-236307:7720509" // Integrated Dynamics
-    //implementation "curse.maven:simple-grinder-238899:7362611" // Simple Grinder
+    //implementation "curse.maven:modonomicon-538392:7930699" // Modonomicon
+    //implementation "curse.maven:occultism-361026:7931827" // Occultism
+    implementation "curse.maven:simple-grinder-238899:7913595" // Simple Grinder
+    //implementation "curse.maven:smartbrainlib-661293:7320270" // SmartBrainLib (1.21.11, but required for Occultism)
 }
 
 def generatedModMetadataDir = layout.buildDirectory.dir("generated/modMetadata")

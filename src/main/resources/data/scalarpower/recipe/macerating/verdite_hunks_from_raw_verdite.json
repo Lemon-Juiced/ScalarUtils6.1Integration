@@ -1,0 +1,14 @@
+{
+  "type": "scalarpower:macerating",
+  "ingredient": "scalarutils:raw_verdite",
+  "result": {
+    "id": "scalarutils:verdite_chunk",
+    "count": 2
+  },
+  "byproduct": {
+    "id": "scalarutils:pelagium_chunk",
+    "count": 1
+  },
+  "byproduct_chance": 0.1
+}
+
